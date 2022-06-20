@@ -50,6 +50,8 @@ li {
     top: 100%;
     left: 0;
     color: #4169E1;
+    left: -1px;
+    right: -1px;
 }
 
 .product-sort > ul li:hover > ul {
