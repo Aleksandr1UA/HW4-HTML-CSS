@@ -1,0 +1,150 @@
+html, body{
+    margin: 0;
+    background: #c6c6c6;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.product-sort {
+    position: relative;
+    width: 15%;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.product-sort div {
+    text-align: center;
+    font-family: Arial;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 1px;
+    padding: 0;
+    display: none;
+}
+
+ul li {
+    padding: .3rem 1rem;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.5rem;
+    border-top: none;
+    background-color: white;
+}
+
+li {
+    display: list-item;
+    text-align: match-parent;
+    font-family: Arial;
+}
+
+.product-sort:hover > ul {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    color: #4169E1;
+}
+
+.product-sort > ul li:hover > ul {
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    color: #4169E1;
+    cursor: pointer;
+}
+
+.product-content {
+    width: 80%;
+    min-width: 200px;
+    margin: 0 auto;
+    border: 1px solid #c6c6c6;
+    padding: 1rem;
+    background: white;
+}
+
+.product { 
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.product:hover, .product-sort:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product .addtowish {
+    position: absolute;
+    top: 0.3rem;
+    left: 0.1rem;
+    cursor: pointer;
+}
+
+.product .addtocard {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.1rem;
+    cursor: pointer;
+}
+
+.addtowish:hover, .addtocard:hover, li:hover {
+    box-shadow: 0px 1px 10px cyan;
+}
+
+.product .img-container {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.product h3 {
+    margin-top: 0.5rem;
+    margin-left: -0.3125rem;
+    margin-bottom: 0;
+    word-break: keep-all;
+}
+
+h3 {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #4169E1;
+    height: 7.75rem;
+}
+
+.product h3:first-letter {
+    color: blue;
+}
+
+.product p {
+    display: block;
+    text-align: center;
+    margin-top: 0;
+}
+
+.product a {
+    font: 1.2rem Arial;
+    cursor: pointer;
+}
+
+.product .price {
+    font: 1.5rem Arial bold;
+    color: red;
+}
+
+.product .price span {
+    white-space: nowrap;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
